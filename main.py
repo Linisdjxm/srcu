@@ -8,7 +8,7 @@ while True:
 	a = input();
 	if ((a == "END1") or (a == "END2") or (a == "END")):
 		if (a == "END2"):
-			x = 1
+			x = 1;
 		break;
 	list.append(a);
 count = 0;
@@ -20,7 +20,7 @@ while True:
 	count += 1;	
 	if count > len(list) - 1:
 		break;
-sv = platform.system()
+sv = platform.system();
 if sv == "Windows":
 	os.system("cls");
 else:
