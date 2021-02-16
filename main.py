@@ -28,10 +28,28 @@ else:
 count = 0;
 if (x == 1):
 	print("=== " + (list[0])[12:-2] + "@zh.wikipedia ===\n{{CU request\n |status          = <!--don't change this line-->\n |language code   = zh\n |project shortcut = w\n");
-while True:
-	print(list2[count]);
-	count += 1;
-	if(count > len(list) - 1):
-		break;
+if (x != 1):
+    while True:
+        print(list2[count]);
+        count += 1;
+        if(count > len(list) - 1):
+            break;
 if x == 1:
-	print(" |discussion      = [[:w:zh:Wikipedia:元維基用戶查核請求#" + (list[0])[12:-2] + "]]\n |reason =\n}}");
+    if(len(list) > 10):
+        cx = 0;
+        while True:
+            print(list2[cx]);
+            cx += 1;
+            if(cx == 10):
+                break;
+    if(len(list) > 10):
+        print(" |discussion      = [[:w:zh:Wikipedia:元維基用戶查核請求#" + (list[0])[12:-2] + "]]\n |reason = More user: ");
+        while True:
+            print(list2[cx]);
+            cx += 1;
+            if cx == len(list2):
+                break;
+        print("}}",end = "");
+    else:
+        print(" |discussion      = [[:w:zh:Wikipedia:元維基用戶查核請求#" + (list[0])[12:-2] + "]]\n |reason =\n}}");
+input();
