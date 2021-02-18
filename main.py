@@ -45,13 +45,13 @@ if x == 2:
 		if cx == len(list2):
 			break;
 if x == 1:
-	if(len(list) > 10):
-		cx = 0;
-		while True:
-			print(list2[cx]);
-			cx += 1;
-			if(cx == 10):
-				break;
+	#if(len(list) > 10):
+	cx = 0;
+	while True:
+		print(list2[cx]);
+		cx += 1;
+		if(cx == 10 or cx == len(list2)):
+			break;
 	if(len(list) > 10):
 		print(" |discussion	  = [[:w:zh:Wikipedia:元維基用戶查核請求#" + (list[0])[12:-2] + "]]\n |reason = More users: ");
 		while True:
